@@ -1,5 +1,6 @@
 # SOTA Agent Memory System
 
+[![GitHub release](https://img.shields.io/github/v/release/Xzeroone/agent-memory-system?include_prereleases)](https://github.com/Xzeroone/agent-memory-system/releases)
 [![GitHub stars](https://img.shields.io/github/stars/Xzeroone/agent-memory-system?style=social)](https://github.com/Xzeroone/agent-memory-system/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
