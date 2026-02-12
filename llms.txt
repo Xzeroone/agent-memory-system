@@ -1,0 +1,37 @@
+# SOTA Agent Memory System
+
+> A production-grade memory system for AI agents with semantic search (ChromaDB), task-aware context loading, and 80% token compression. Install with one command: `curl -sSL https://raw.githubusercontent.com/Xzeroone/agent-memory-system/main/install.sh | bash`
+
+## Core Concepts
+
+- **Semantic Search**: Vector embeddings (all-MiniLM-L6-v2) enable finding relevant memories by meaning, not keywords. Powered by ChromaDB.
+- **Task-aware Loading**: Context level automatically chosen based on task type (debug/create/learn) and available token budget.
+- **Memory Compression**: Auto-generated compact context (~3KB) saves 80%+ tokens compared to full context.
+- **Single Source Files**: No duplication - USER, AGENT, MODELS profiles stored once in `memory/profiles/`.
+
+## Installation
+
+- [Install Script](install.sh): One-command installer - `curl -sSL ... | bash`
+- [AGENTS.md](AGENTS.md): Full agent instructions for installation and integration
+- [QUICK_START.md](docs/QUICK_START.md): 5-minute setup walkthrough
+
+## Scripts
+
+- [context-loader.sh](templates/scripts/context-loader.sh): Main entry point - `context-loader.sh smart "task"`
+- [semantic-search.sh](templates/scripts/semantic-search.sh): Vector search - `semantic-search.sh search "query"`
+- [memory-embeddings.py](templates/scripts/memory-embeddings.py): ChromaDB embedding service
+- [generate-compact-context.sh](templates/scripts/generate-compact-context.sh): Compress memory
+- [summarize-session.sh](templates/scripts/summarize-session.sh): Archive old sessions
+
+## Templates
+
+- [USER.md](templates/memory/profiles/USER.md.template): User profile template
+- [AGENT.md](templates/memory/profiles/AGENT.md.template): Agent persona template
+- [CORE.md](templates/memory/core/CORE.md.template): Essential context template
+- [MODELS.md](templates/memory/profiles/MODELS.md.template): Model strategy template
+
+## Optional
+
+- [CUSTOMIZATION.md](docs/CUSTOMIZATION.md): Full customization options
+- [API.md](docs/API.md): Complete script API reference
+- [INTEGRATION.md](docs/INTEGRATION.md): Integration patterns for different agent types

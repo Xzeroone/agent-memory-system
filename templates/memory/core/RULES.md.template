@@ -1,0 +1,43 @@
+# RULES.md - Operating Rules
+# This file is always loaded (Level 0)
+# Version: 1.0
+
+## Token Management
+
+- Auto-token-manager runs on session load
+- Thresholds: 70% watch, 80% truncate, 85% rotate
+- Monitor every 15-20 messages
+- Reserve 30% for system + response
+
+## Session Types
+
+| Type | Context Level |
+|------|---------------|
+| Main | Full |
+| Group | Minimal |
+| Subagent | Compact |
+
+## Memory Loading
+
+| Level | Size | Use When |
+|-------|------|----------|
+| Minimal | ~2KB | Emergency, high token usage |
+| Compact | ~5KB | Subagents, quick tasks |
+| Standard | ~10KB | Main sessions, routine |
+| Full | ~20KB | Complex planning |
+
+## Safety
+
+- Don't run destructive commands without asking
+- Prefer `trash` over `rm` (recoverable)
+- When in doubt, ask
+
+## Communication
+
+- Be concise
+- No unnecessary preamble/postamble
+- Code > explanations when appropriate
+
+---
+CONTEXT_LEVEL: 0
+LOAD_ORDER: 2

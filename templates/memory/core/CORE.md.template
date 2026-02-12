@@ -1,0 +1,57 @@
+# CORE.md - Essential Context (Minimal)
+# This file is always loaded (Level 0)
+# Keep it small - aim for ~2KB
+# Version: 1.0
+
+## Who's Who
+
+| Role | Name | Details |
+|------|------|---------|
+| User | [Name] | See `profiles/USER.md` |
+| Agent | [Name] | See `profiles/AGENT.md` |
+
+## Model Strategy
+
+See `profiles/MODELS.md` for full details.
+
+**Quick ref:** Primary (90%), Flagship (9%), Specialized (1%)
+
+## Current Focus
+
+- [Focus item 1]
+- [Focus item 2]
+- [Focus item 3]
+
+## Key Rules
+
+1. **Token efficiency** - Load only what's needed
+2. **Context awareness** - Check session type before loading
+3. **Safety first** - Ask before destructive operations
+
+## Workspace Structure
+
+```
+memory/
+├── profiles/    # USER, AGENT, MODELS (single source)
+├── core/        # CORE, RULES (this level)
+├── knowledge/   # LEARNINGS, PROJECTS, INDEX
+├── sessions/    # Daily logs + archive
+└── cache/       # Compact context, embeddings
+```
+
+## Quick Commands
+
+```bash
+# Load context
+context-loader.sh smart "task description"
+
+# Semantic search
+semantic-search.sh search "query"
+
+# Update embeddings
+semantic-search.sh embed
+```
+
+---
+CONTEXT_LEVEL: 0
+LOAD_ORDER: 1

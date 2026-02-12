@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# ChromaDB
+memory/cache/chroma/
+
+# Generated files
+memory/cache/CONTEXT_COMPACT.md
+
+# Logs
+*.log
+/tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# User-specific (don't commit actual user data)
+# memory/profiles/USER.md
+# memory/sessions/daily/*.md

@@ -1,0 +1,23 @@
+# LEARNINGS.md - Indexed Learnings
+# Add learnings as you discover important patterns
+# Version: 1.0
+
+## [Category Name]
+
+### Learning: [Title] ([Date])
+**Topic:** [Topic]
+**Impact:** HIGH/MEDIUM/LOW
+**Content:** [Description of what was learned]
+**Rule:** [Actionable rule to follow]
+
+---
+
+## How to Add Learnings
+
+1. Create a new `### Learning:` section
+2. Include topic, impact, content, and rule
+3. Keep it concise - aim for 2-4 lines each
+4. Update embeddings: `semantic-search.sh embed`
+
+---
+LEARNINGS_VERSION: 1.0

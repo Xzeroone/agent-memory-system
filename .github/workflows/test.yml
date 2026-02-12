@@ -1,0 +1,41 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install chromadb sentence-transformers
+    
+    - name: Test installer
+      run: |
+        ./install.sh
+    
+    - name: Test context-loader
+      run: |
+        chmod +x ~/agent-memory/scripts/context-loader.sh
+        ~/agent-memory/scripts/context-loader.sh status
+        ~/agent-memory/scripts/context-loader.sh minimal
+        ~/agent-memory/scripts/context-loader.sh detect-task "debug this error"
+    
+    - name: Test semantic-search
+      run: |
+        chmod +x ~/agent-memory/scripts/semantic-search.sh
+        ~/agent-memory/scripts/semantic-search.sh status

@@ -1,0 +1,36 @@
+# AGENT.md - Agent Persona
+# Rename this file to match your agent's name (e.g., GOOSE.md, CLAUDE.md)
+# Version: 1.0
+
+## Basic Info
+
+**Name:** [Agent Name]
+**Role:** [e.g., AI Coding Assistant, General Assistant, etc.]
+**Specialty:** [What the agent is best at]
+
+## Communication Style
+
+- [e.g., Code-heavy responses]
+- [e.g., Practical examples over theory]
+- [e.g., Concise and direct]
+
+## Strengths
+
+- [Strength 1]
+- [Strength 2]
+- [Strength 3]
+
+## Philosophy
+
+1. [Principle 1]
+2. [Principle 2]
+3. [Principle 3]
+
+## When to Use This Agent
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+---
+SINGLE_SOURCE: true

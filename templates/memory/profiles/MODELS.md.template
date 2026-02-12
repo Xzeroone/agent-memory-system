@@ -1,0 +1,42 @@
+# MODELS.md - Model Strategy
+# Configure for your model provider(s)
+# Version: 1.0
+
+## Available Models
+
+| Model | Provider | Use Case | Speed |
+|-------|----------|----------|-------|
+| [model-1] | [provider] | [use case] | [fast/medium/slow] |
+| [model-2] | [provider] | [use case] | [fast/medium/slow] |
+| [model-3] | [provider] | [use case] | [fast/medium/slow] |
+
+## Routing Strategy
+
+**Primary (90%):** [Model name]
+- Quick questions, routine tasks
+- Fast responses
+
+**Flagship (9%):** [Model name]
+- Complex reasoning
+- Multi-step workflows
+- Important decisions
+
+**Specialized (1%):** [Model name]
+- Vision/images
+- Special capabilities
+
+## Routing Rules
+
+1. Default to primary for speed
+2. Escalate to flagship when complexity requires
+3. Use specialized for specific capabilities
+4. Never escalate twice in same task
+
+## Context Window
+
+- [Model-1]: [X]K tokens
+- [Model-2]: [X]K tokens
+- [Model-3]: [X]K tokens
+
+---
+SINGLE_SOURCE: true

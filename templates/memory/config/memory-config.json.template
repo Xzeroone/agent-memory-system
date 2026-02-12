@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "description": "SOTA Memory System Configuration",
+  
+  "context_levels": {
+    "minimal": {
+      "size_kb": 2,
+      "files": ["core/CORE.md", "core/RULES.md"],
+      "use_when": "emergency, high token usage"
+    },
+    "compact": {
+      "size_kb": 5,
+      "files": ["cache/CONTEXT_COMPACT.md"],
+      "use_when": "subagents, group chats, quick tasks"
+    },
+    "standard": {
+      "size_kb": 10,
+      "files": ["core/CORE.md", "profiles/USER.md"],
+      "task_files": {
+        "debug": ["profiles/AGENT.md"],
+        "create": ["profiles/AGENT.md", "knowledge/PROJECTS.md"],
+        "learn": ["knowledge/LEARNINGS.md"],
+        "review": ["knowledge/LEARNINGS.md", "knowledge/INDEX.md"]
+      },
+      "use_when": "main sessions, routine tasks"
+    },
+    "full": {
+      "size_kb": 24,
+      "use_semantic_search": true,
+      "max_files": 10,
+      "use_when": "complex planning, explicit request"
+    }
+  },
+  
+  "embeddings": {
+    "enabled": true,
+    "backend": "chromadb",
+    "model": "all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "update_interval_hours": 6
+  },
+  
+  "compression": {
+    "enabled": true,
+    "daily_summary": true,
+    "archive_after_days": 7,
+    "keep_recent_logs": 3
+  },
+  
+  "importance": {
+    "decay_rate": 0.95,
+    "min_access_for_promotion": 3,
+    "archive_threshold": 0.1
+  },
+  
+  "paths": {
+    "memory_dir": "~/agent-memory/memory",
+    "cache_dir": "~/agent-memory/memory/cache",
+    "chroma_db": "~/agent-memory/memory/cache/chroma",
+    "scripts_dir": "~/agent-memory/scripts"
+  }
+}

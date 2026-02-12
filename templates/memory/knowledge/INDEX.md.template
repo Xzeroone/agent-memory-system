@@ -1,0 +1,59 @@
+# INDEX.md - Tag-Based Memory Lookup
+# Helps find relevant files by topic
+# Version: 1.0
+
+## How to Use
+
+1. Find your topic in the tag sections below
+2. See related files with their paths
+3. Load or search those files
+
+---
+
+## Tag Sections
+
+### user
+**Definition:** User profile, preferences, working style
+**Files:**
+- `profiles/USER.md`
+
+### agent
+**Definition:** Agent persona, communication style, capabilities
+**Files:**
+- `profiles/AGENT.md`
+
+### models
+**Definition:** Model usage, strategies, fallback patterns
+**Files:**
+- `profiles/MODELS.md`
+
+### rules
+**Definition:** Operating rules, token management, safety
+**Files:**
+- `core/RULES.md`
+
+### learnings
+**Definition:** Discovered patterns, best practices, gotchas
+**Files:**
+- `knowledge/LEARNINGS.md`
+
+### projects
+**Definition:** Active and completed projects
+**Files:**
+- `knowledge/PROJECTS.md`
+
+---
+
+## Quick Reference
+
+| Topic | File |
+|-------|------|
+| User info | profiles/USER.md |
+| Agent persona | profiles/AGENT.md |
+| Model strategy | profiles/MODELS.md |
+| Rules | core/RULES.md |
+| Learnings | knowledge/LEARNINGS.md |
+| Projects | knowledge/PROJECTS.md |
+
+---
+INDEX_VERSION: 1.0

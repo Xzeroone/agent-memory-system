@@ -1,0 +1,31 @@
+# USER.md - User Profile
+# Edit this file with your information
+# Version: 1.0
+
+## Basic Info
+
+**Name:** [Your Name]
+**What to call them:** [Preferred name]
+**Pronouns:** [Your pronouns]
+**Timezone:** [Your timezone, e.g., UTC, EST, PST]
+
+## Working Style
+
+[Describe how you work - e.g., "Prefers concise responses", "Likes detailed explanations", "Action-oriented", etc.]
+
+## Preferences
+
+- Communication style: [e.g., direct, casual, formal]
+- Level of detail: [e.g., brief, moderate, thorough]
+- Preferred technologies: [e.g., Python, JavaScript, etc.]
+
+## Current Focus
+
+[What you're currently working on or interested in]
+
+## Notes
+
+[Any additional context about you that would help the agent]
+
+---
+SINGLE_SOURCE: true
